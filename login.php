@@ -5,10 +5,10 @@
 	<title></title>
 </head>
 <body>
-	<form method="POST" action="">
+	<form method="POST" action="userLogin.php">
 		<input type="text" name="username">
 		<input type="password" name="pass">
-		<button type="submit">Login</button>
+		<input type="submit" name="login">
 	</form>
 </body>
 </html>
