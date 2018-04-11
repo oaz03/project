@@ -1,5 +1,7 @@
+
 <?php
 include('_header.php');
+session_start();
 ?>
 <div class="row">
 	<div class="col-lg-8" id="dashMenu">
@@ -22,7 +24,7 @@ else if($id)
 
 ?>
 	</div>
-		<div class="col-lg-4">helllohelllohelllohellloecho</div>
+		<div><?php echo $_SESSION['username']; ?> </div>
 </div>
 
 <style type="text/css">

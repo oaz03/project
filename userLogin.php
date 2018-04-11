@@ -18,7 +18,7 @@ if (isset($_POST['login'])) {
  	           exit();
        }
        else{
-       $_SESSION['surenames']=$row['surename'];
+       $_SESSION['username']=$row['username'];
        	header("Location: ../project/dashboard.php?login=admin");
          }
        }
