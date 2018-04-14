@@ -18,8 +18,18 @@ if (isset($_POST['login'])) {
  	           exit();
        }
        else{
+        $row=mysqli_fetch_assoc($result);
        $_SESSION['username']=$row['username'];
-       	header("Location: ../project/dashboard.php?login=admin");
+        $_SESSION['fname']=$row['fname'];
+        $_SESSION['lname']=$row['lname'];
+       if ($_SESSION['username']=="david") {
+         header("Location: ../project/dashboard.php?login=admin");
+         exit();
+       }
+       else{header("Location: ../project/dashboard.php?login=subadmin");
+       exit();
+       }
+       	
          }
        }
       }
