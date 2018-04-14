@@ -20,7 +20,7 @@
 <body>
 	<?php include 'dbconnect.php'; ?>
 	<header>
-		<h1>GEt an idea</h1>
+		
 	</header>
 <nav>
 	<li type="none">
@@ -33,7 +33,7 @@
 	$post="select * from post";
 	$resul=mysqli_query($conn,$post);
 	$rows=mysqli_fetch_assoc($resul);
-    
+    //test
     echo  "<h3>".$rows['title']."</h3><br>";
     echo  $rows['fmage'];
     echo  $rows['content'];
